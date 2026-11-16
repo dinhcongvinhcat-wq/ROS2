@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.5)
+project(table_bot_navigation)
+
+find_package(ament_cmake REQUIRED)
+
+install(DIRECTORY launch param map rviz
+  DESTINATION share/${PROJECT_NAME}
+)
+
+ament_package()
